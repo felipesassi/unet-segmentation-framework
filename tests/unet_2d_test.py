@@ -1,5 +1,12 @@
-import torch
+
+import sys
+import os.path
+
+path = os.path.dirname(os.getcwd())
+sys.path.append(path)
+
 from models.unet_2d import UNet2D
+import torch
 
 
 def test_output_shape():
